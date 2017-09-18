@@ -60,10 +60,10 @@ else
 								repmat(1:eigDimensions(iDimension),1,kMatrices-1)+sum(eigDimensions(1:iDimension-1))));
 			end
 		end
-		% TODO cant explain this at the moment because it is not documented in the simDiag.pdf 
+		% for the joint base
 		basis = Q*basis;
 	else
-		% TODO cant explain this at the moment because it is not documented in the simDiag.pdf
+		% for the joint base, it's like lemma 3.2.6
 		basis = V;
 	end
 end
